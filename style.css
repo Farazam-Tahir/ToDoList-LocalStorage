@@ -1,0 +1,137 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.list-container {
+    width: 30%;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* color: #fff; */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
+    border-radius: 8px; 
+    /* background-color: lightcyan; */
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  .todo-items li {
+    list-style-type: none;
+  }
+  h1{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: white;
+  }
+  hr{
+    margin-top: 30px;
+}
+  
+  .todo-form{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    background-color: white;
+  }
+  #todo-input {
+    padding: 20px;
+    border-radius: 5px;
+    border: 0;
+    width: 67%;
+    font-size: 16px;
+  }
+  #addButton {
+    padding: 20px;
+    border-radius: 8px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    background: #ececec;
+    border: 0;
+    font-weight: bolder;
+    font-size: 17px;
+    float: right;
+    cursor: pointer;
+    color: cadetblue;
+    width: 30%;
+  }
+
+  
+  #todo-input:focus {
+    outline: none;
+    color: gray;
+  }
+  #todo-list li {
+    font-size: 17px;
+    font-weight: 700;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 100%;
+    padding-left: 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    text-transform: capitalize;
+    color: gray;
+    background-color: white;
+  }
+
+.remove{
+    float: right;
+    padding: 20px;
+    border: none;
+    border-radius: 8px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    cursor: pointer;
+    color: red;
+}
+.task-heading{
+    text-align: center;
+    margin: 20px 0px;
+    margin-top: 80px;
+    color: white;
+}
+.checkbox{
+    cursor: pointer;
+}
+
+
+@media screen and ( max-width : 700px) {
+    .list-container{
+        width: 80%;
+    }
+    .todo-form{
+        display: flex;
+        flex-direction: column;
+    }
+    #todo-input{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    #addButton{
+        width: 100%;
+        border-radius: 0%;
+    }
+}
+
+@media screen and ( max-width : 900px) {
+    .list-container{
+        width: 50%;
+    }
+}
